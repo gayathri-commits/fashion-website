@@ -140,7 +140,7 @@ nav {
 }
 
 .shop-now:hover {
-	background: linear-gradient(to left, #81511a, #dab183) ;
+    background: linear-gradient(to left, #81511a , #dab183 ) ;
 	border: 2px solid #232323;
 	font-size: 17px;
 	color: #232323;
@@ -232,4 +232,10 @@ nav {
     }
 
 
+}
+
+@media  screen and (max-width: 768px) {
+    .logo {
+        display: none;
+    }
 }
