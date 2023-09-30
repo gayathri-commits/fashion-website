@@ -1,0 +1,235 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Advent Pro', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Prata', serif;
+    font-family: 'Satisfy', cursive;
+    font-family: 'Spirax', cursive; 
+    font-family: 'Dancing Script', cursive; 
+    background-color: #DAD0C7;
+    /*overflow: hidden; */
+    
+    
+}
+
+.logo {
+    width: 20vh;
+    height:13vh;
+
+}
+
+header {
+    font-family: 'Prata', serif;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 15vh;
+    padding-left: 6vh;
+    padding-right: 8vh;
+    padding-bottom: 0;
+    margin: auto;
+    align-items: center;
+}
+
+
+nav {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-link:hover {
+    color: #81511a;
+    text-decoration: none;
+    border-bottom: 1px solid #DA9E5A;
+}
+
+.nav-link {
+    font-family: 'Poppins', serif;
+    font-size: 1.1em;
+    font-weight: 370;
+    color: #232323;
+    text-decoration: none;
+    transition: 0.75s;
+}
+
+/*
+.web-name {
+    font-weight: bold;
+    font-size: 1.5em;
+    background: #4e300d;
+}
+*/
+
+@-webkit-keyframes glow {
+
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #706c66, 0 0 40px #e4b074;
+    }
+  }
+
+.presentation {
+    margin-left: 10vh;
+    margin-right: 15vh;
+}
+
+.introduction {
+    display: flex;
+    color: #232323;
+    flex-direction: row;
+    margin-left: 4vh;
+}
+
+.heading {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-size: 4em;
+    margin-top: 7vh;
+    background: linear-gradient(to left, #81511a, #dab183);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    
+}
+
+.e-line {
+    color: #222222;
+    font-size: 1em;
+}
+
+.two-line {
+    color: #222222;
+    margin-left: 20vh;
+}
+
+.intro-text p {
+    font-family: 'Prata', serif;
+    display: flex;
+    margin-top: 5vh;
+    margin-bottom: 8vh;
+    font-size: 1.1em;
+    text-align: left;
+    color: #3f3f3f;
+}
+
+
+.shop-now {
+    font-family: 'Prata', sans-serif;
+    border-radius: 10px;
+	background: transparent;
+	border: 1px solid #81511a;
+	color: #81511a;
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 16px;
+    transition: 1.2s;
+    
+}
+
+.shop-now:hover {
+	background: linear-gradient(to left, #81511a, #dab183) ;
+	border: 2px solid #232323;
+	font-size: 17px;
+	color: #232323;
+    box-shadow: 7px 10px 35px #81511a; 
+}
+
+.image{
+    position: relative;
+    top: 5vh;
+    left: 5vh;
+    height: 80vh;
+    width: 70vh;
+}
+
+@media screen and (max-width: 1024px) {
+
+    header {
+        font-size: 0.85em;
+    }
+    
+    .heading {
+        font-size: 4em;
+    }
+
+    .e-line {
+        margin-top: 5vh;
+        margin-left: 2vh;
+    }
+
+    .two-line {
+        margin-top: 9px;
+    }
+
+    .introduction {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro-text {
+        padding: 1px;
+        text-align: center;
+    }
+
+    .intro-text p {
+        font-size: 0.95em;
+        text-align: center;
+        margin-top: 1.9vh;
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+
+    .shop-now {
+        width: 50%;
+        font-size: 0.8em;
+    }
+
+    .shop-now:hover {
+        width: 52%;
+        font-size: 0.9em;
+    }
+
+    .image {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .heading {
+        font-size: 50px;
+    }
+
+    .two-line {
+        margin-left: 2vh;
+    }
+
+
+}
+
+@media screen and (max-width: 565px) {
+
+    .heading {
+        font-size: 30px;
+    }
+
+    .two-line {
+        margin-left: 2vh;
+    }
+
+
+}
